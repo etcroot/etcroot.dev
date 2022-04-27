@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Menu from "./Menu";
 
 export default function Layout(props) {
   return (
@@ -13,7 +14,10 @@ export default function Layout(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="content">
-        <section className="content-body">{props.children}</section>
+        <section className="content-body">
+          {props.children}
+          <Menu />
+        </section>
       </main>
     </React.Fragment>
   );

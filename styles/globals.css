@@ -21,13 +21,23 @@ a {
   box-sizing: border-box;
 }
 
+@layer base {
+  input {
+     @apply ring-0 outline-none border-0 bg-slate-900 rounded py-1 px-2;
+  }
+}
+
 @layer components {
   .content {
-    @apply grid items-center justify-center min-h-screen text-center;
+    @apply grid items-center justify-center min-h-screen text-center px-8;
   }
 
   .content-body {
     @apply flex flex-col gap-3;
+  }
+
+  .clamped {
+    @apply py-8;
   }
 
   .title {
@@ -39,10 +49,30 @@ a {
   }
 
   .title-xl {
-    @apply text-5xl font-semibold tracking-wider text-white;
+    @apply text-5xl font-extrabold tracking-wider uppercase bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text;
   }
 
   .alert {
     @apply uppercase text-sm tracking-wider font-semibold antialiased bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text;
+  }
+
+  .menu {
+    @apply py-2;
+  }
+
+  .menu-links {
+    @apply flex items-center justify-center gap-5;
+  }
+
+  .menu-link {
+    @apply uppercase text-sm font-semibold text-white;
+  }
+
+  .form-label {
+    @apply uppercase text-xs font-semibold bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text;
+  }
+
+  .high-link {
+    @apply font-semibold bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text;
   }
 }
