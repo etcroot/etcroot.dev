@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Barlow:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Barlow', sans-serif !important;
+  @apply bg-black text-slate-300;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer components {
+  .content {
+    @apply grid items-center justify-center min-h-screen text-center;
+  }
+
+  .content-body {
+    @apply flex flex-col gap-3;
+  }
+
+  .title {
+    @apply text-xl font-semibold tracking-wider text-white;
+  }
+
+  .subtitle {
+    @apply font-semibold tracking-wider text-slate-400 uppercase;
+  }
+
+  .title-xl {
+    @apply text-5xl font-semibold tracking-wider text-white;
+  }
+
+  .alert {
+    @apply uppercase text-sm tracking-wider font-semibold antialiased bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text;
+  }
+}
