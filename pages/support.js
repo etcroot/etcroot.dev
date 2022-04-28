@@ -29,14 +29,17 @@ export default function Support() {
               className="high-link"
               href="https://www.buymeacoffee.com/etcroot"
               target="_blank"
+              rel="noreferrer nofollow"
             >
               buy me a coffee
-            </a>
+            </a>{" "}
+            ☕
           </p>
           <a
             className="mt-3 bg-gradient-to-r from-purple-500 to-blue-500 uppercase font-bold text-sm w-max place-self-center text-black rounded px-2 py-1 hover:scale-110 transition-all duration-75 ease-in"
             href="https://twitter.com/intent/tweet?text=Check%20out%20this%20site:%20https://etcroot.dev%20✨"
             target="_blank"
+            rel="noreferrer nofollow"
           >
             Share on Twitter
           </a>
