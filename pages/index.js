@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,6 +10,18 @@ export default function Home() {
         enthusiast.
       </h5>
       <i className="alert">in developement</i>
+      <p>
+        This site is{" "}
+        <Link href="https://github.com/etcroot/etcroot.dev">
+          <a
+            className="alert !lowercase !text-base"
+            target="_blank"
+            rel="noreferrer nofollow"
+          >
+            Open Source
+          </a>
+        </Link>
+      </p>
     </Layout>
   );
 }
