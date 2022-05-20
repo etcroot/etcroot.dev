@@ -20,7 +20,7 @@ export default function handler(req, res) {
           response: "Bad Request",
           code: 400,
           success: false,
-          category: "general",
+          category: "errors",
         });
         break;
     }
@@ -30,7 +30,7 @@ export default function handler(req, res) {
       response: "Internal Server Error",
       code: 500,
       success: false,
-      category: "general",
+      category: "errors",
     });
   }
 }
