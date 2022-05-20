@@ -3,7 +3,7 @@ My personal site, now open source. Feel free to use this as a template or use ce
 Things powering this:
 - [NextJS](https://nextjs.org/)
 - [TailwindCSS](https://tailwindcss.com/)
-- [ChanceJS](https://chancejs.com/) (API Endpoints)
+- [ChanceJS](https://chancejs.com/) ([API Endpoints](https://github.com/etcroot/etcroot.dev/tree/main/pages/api/v1))
 
 ### How to Use
 Download the repository, then type:
